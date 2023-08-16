@@ -1,0 +1,15 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#ff8800" id="svg_1" d="m15.41,16.09l-4.58,-4.59l4.58,-4.59l-1.41,-1.41l-6,6l6,6l1.41,-1.41z"/>
+  <path transform="rotate(-76 -30.08332252502441,25.805551528930668) " id="svg_2" fill="none" d="m-42.083323,13.805551l24,0l0,24l-24,0l0,-24z"/>
+  <path d="m7.625001,7.755209c0,0 -0.059074,-0.279874 0,-1.111111c0.06962,-0.979621 0.600996,-2.047475 1.25,-2.916666c0.898825,-1.203768 1.666666,-1.805555 2.777777,-2.499999l0.972222,-0.277778l1.944444,-0.138889l1.388888,0" id="svg_3" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+  <polyline stroke-linecap="round" id="svg_4" points="36.23610426271105,8.588542630642738 36.23610426271105,8.588542630642738 " fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+  <polyline stroke="null" stroke-linecap="round" id="svg_5" points="-39.87498534167669,-7.939230476879413 -39.87498534167669,-7.939230476879413 " fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="none"/>
+ </g>
+</svg>

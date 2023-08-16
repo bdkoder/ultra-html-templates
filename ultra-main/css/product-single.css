@@ -1,0 +1,239 @@
+/* 
+    Created on : Feb 2, 2019, 3:15:02 PM
+    Author     : Shahidul Islam
+    W3C CSS Validator results: Congratulations! No Error Found.
+*/
+.container-fluid.product-details-header-area {
+    height: 17em;
+    /*background-color: blueviolet*/
+    background: url('../img/e-com/ba2.jpg') no-repeat center center fixed;
+    width: 100%;
+    background-size: cover;
+    position: relative
+
+}
+.header-overlay{
+    background: #bd64da;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 9999; */
+    height: 17em;
+    width: 100%;
+    opacity: .4;
+}
+.product-details-page-container{
+    margin-top: -11em
+}
+
+.exzoom_img_ul_outer , .exzoom_img_box{
+    /*height: 600px !important;*/
+}
+/*.exzoom_zoom{
+    height: 100% !important; width: 100% !important
+}*/
+.exzoom .exzoom_img_ul_outer .exzoom_img_ul li img {
+    /*width: auto !important;*/
+}
+.exzoom_zoom_outer{
+    /*height: 100% !important*/
+}
+
+.exzoom_img_ul{}
+.exzoom_img_ul li{
+    /*height: 600px !important;*/
+}
+.exzoom_img_ul li img{
+    /*height: 100% !important;*/
+}
+
+
+
+
+.gradient-custom{background:#3a7bd5;background:-webkit-linear-gradient(to right,#3a6073,#3a7bd5);background:-webkit-gradient(linear,left top,right top,from(#3a6073),to(#3a7bd5));background:-webkit-linear-gradient(left,#3a6073,#3a7bd5);background:-o-linear-gradient(left,#3a6073,#3a7bd5);background:linear-gradient(to right,#3a6073,#3a7bd5)}.card-comments img{width:4rem}
+
+
+
+
+
+
+
+
+
+
+
+
+/*collapsed*/
+/*=====*/
+.card  a:not(.collapsed) .rotate-icon {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.collapse-area .btn.btn-link {
+    text-decoration: none
+}
+
+
+
+
+
+/*for select box*/
+.custom-select{
+    background: none;
+    position: relative;
+    padding: 0;
+    border: none;
+}
+/*.custom-select:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+.custom-select-lg {
+    font-size: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ced4da;
+}
+.custom-select-lg::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid red;
+    border-bottom: 0;
+    border-left: .3em solid red;
+}
+*/
+
+
+.custom-select select {
+    display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: #fff;
+    color: black !important;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #aaa transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #aaa transparent;
+    top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+    padding: .7em 1em;
+    border: 1px solid #ddd;
+    border-color: #ddd;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 0.5em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+.jssocials {
+    font-size: .8rem;
+}
+
+
+
+
+
+ 
+/*start : for Responsive*/
+@media only screen and (max-width: 991px) {
+    .product-details-page-container{
+        margin-top: -10em
+    }
+     .product-details-header, .header-overlay {
+        height: 13em;}
+    .container-fluid.product-details-header-area {
+        height: 13em;
+    }
+    .exzoom_preview, .exzoom_zoom{
+        display: none !important
+    }
+}
+@media only screen and (max-width: 767px) {
+
+}
+@media only screen and (max-width: 425px) {
+    .product-cta .buy-btn{
+        width: 100%;
+        margin-left: 0;
+    }
+    .product-cta .wish-btn{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

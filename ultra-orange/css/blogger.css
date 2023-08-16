@@ -1,0 +1,59 @@
+/* 
+    Created on : Jan 2, 2019, 6:18:54 PM
+    Author     : Shahidul Islam
+    W3C CSS Validator results: Congratulations! No Error Found.
+*/
+ .avatar img.rounded-circle {
+    max-width: 150px;
+}
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.modal {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    /* bottom: 50%; */
+    left: 0;
+    z-index: 1050;
+    display: none;
+    outline: 0;
+    /* margin: auto 0; */
+}
+@media (max-width: 575px) {
+    /*for about-us page*/
+    .blogger .get-in-touch-area{
+        width: 100% !important
+    }
+    .blogger .btn.submit{
+        display: block;
+        width: 100%
+    }
+}
+
+@media (max-width: 991px) {
+    .postPublisher , .navy-line {
+        float: none !important;
+        text-align: center !important
+    }
+    .postPublisher  .float-right.text-right{
+        float: none !important;
+        text-align: center !important;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

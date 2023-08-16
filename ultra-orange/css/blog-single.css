@@ -1,0 +1,46 @@
+/* 
+    Created on : Jan 1, 2019, 9:05:31 PM
+    Author     : Shahidul Islam
+    W3C CSS Validator results: Congratulations! No Error Found.
+*/
+
+.gradient-custom{background:#3a7bd5;background:-webkit-linear-gradient(to right,#3a6073,#3a7bd5);background:-webkit-gradient(linear,left top,right top,from(#3a6073),to(#3a7bd5));background:-webkit-linear-gradient(left,#3a6073,#3a7bd5);background:-o-linear-gradient(left,#3a6073,#3a7bd5);background:linear-gradient(to right,#3a6073,#3a7bd5)}.card-comments img{width:4rem}
+
+.avatar img.rounded-circle {
+    max-width: 150px;
+}
+.about-author{
+    max-width: 100px;
+}
+.jssocials {
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-footer.like-and-social-area{
+
+    }
+    .card-footer.like-and-social-area .like-and-social-main{
+        display: block !important;
+    }
+
+    .card-footer.like-and-social-area .like-and-social-main .w-40{
+        width: 100% !important;
+        text-align: center !important
+    }
+    .card-footer.like-and-social-area .like-and-social-main .w-60{
+        width: 100% !important;
+        text-align: center !important
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

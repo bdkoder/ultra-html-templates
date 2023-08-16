@@ -1,0 +1,249 @@
+/* 
+    Created on : Apr 13, 2019, 10:39:09 PM
+    Author     : Shahidul Islam
+    W3C CSS Validator results: Congratulations! No Error Found.
+*/
+
+ 
+.container-fluid.product-details-header-area {
+    /*    padding-right: 0px; 
+        padding-left: 0px; */
+    height: 17em;
+    /*background-color: blueviolet*/
+    background: url('../img/e-com/ba2.jpg') no-repeat center center fixed;
+    width: 100%;
+    background-size: cover;
+    position: relative
+
+}
+.header-overlay{
+    background: #e66b00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 9999; */
+    height: 17em;
+    width: 100%;
+    opacity: .4;
+}
+.product-details-page-container{
+    margin-top: -11em
+}
+
+.thead-bg{
+    background-color: orange;
+    color: white;
+
+}
+.thead-bg tr th{
+    font-weight: 400 !important;
+    letter-spacing: .06em;
+    font-size: 17px
+
+}
+
+
+table{
+    font-size: 17px;
+    text-align: center
+}
+
+table.table td, table.table th {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+table.table thead th {
+    border-top:  none !important;
+    border-bottom:  none !important;
+}
+
+
+td a img{
+    width: 30%;
+    margin: 0 auto;
+}
+
+td .fa-close{
+    font-size: 1.5rem;
+    font-weight: normal !important;
+    background: #ddd;
+    padding: 0.1em;
+    height: 1.3em;
+    width: 1.3em;
+    color: #fff;
+    cursor: pointer
+}
+td .fa-close:hover{
+    /*background-color: orange;*/
+}
+.qty-minus i , .qty-plus i{
+    border: 1px solid #dee2e6;
+    padding: .7em .8em;
+    font-size: 1rem;
+    color: orange;
+    cursor: pointer
+}
+.qty-minus i:hover , .qty-plus i:hover{
+    background-color: #dee2e6;
+
+}
+.qty .qty-input{
+    width: 100%;
+    max-width: 2.7em;
+    border: 1px solid #dee2e6;
+    padding: .6em .1em;
+    text-align: center;
+
+}
+
+/*for ie*/
+@media all and (-ms-high-contrast:none){
+    *::-ms-backdrop, .qty .qty-input{
+    padding: 0.75em .1em   
+}
+}
+
+
+.sd-body{}
+.sd-body ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sd-body ul li{
+
+}
+.sd-body ul li i{}
+.sd-body ul li span{
+    float: right
+}
+
+
+
+.table-sm-customized{}
+.table-sm-customized .thead-bg tr th, .table-sm-customized tbody tr td {font-size: 10px}
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.table-sm-customized .table td, .table th {
+    padding: .25rem;
+}
+
+
+
+@media (max-width: 991px) {
+    .product-details-header, .header-overlay {
+        height: 13em;}
+    .container-fluid.product-details-header-area {
+        height: 13em;
+    }
+}
+    @media (max-width: 800px) {
+        .thead-bg .w-35{
+            width: 20%;
+        } 
+    }
+    @media (max-width: 767px) {
+        .table-sm-customized{}
+        .table-sm-customized .qty .qty-input {
+            max-width: 2.6em;
+            padding: .39em 0em;
+        }
+        .table-sm-customized td .fa-close {
+            font-size: 1.1rem;
+            padding: 0.15em;
+            height: 1.2em;
+            width: 1.2em;
+        }
+        .table-sm-customized .qty-minus i, .qty-plus i {
+            padding: .38em .54em;
+            font-size: 1rem;
+        }
+
+
+    }
+
+    @media (min-width: 320px) {
+        .table-sm-customized td a img{
+            width: 100%;
+        }
+    }
+    @media (min-width: 375px) {
+        .table-sm-customized .thead-bg tr th, .table-sm-customized tbody tr td {font-size: 12px}
+        .table-sm-customized td a img{
+            width: 95%;
+        }
+        .table-sm-customized .img-td{
+            width: 20%;
+        }
+
+    }
+    @media (min-width: 425px) {
+        .table-sm-customized td a img{
+            width: 90%;
+        }
+        .table-sm-customized .img-td{
+            width: 30%;
+        }
+    }
+    @media (min-width: 575px) {
+        .table-sm-customized td a img{
+            width: 50%;
+        }
+        .table-sm-customized .img-td{
+            width: 40%;
+        }
+    }
+    @media (min-width: 768px) {
+
+        td a img{
+            width: 60%;
+        }
+
+        .pro-qty-area .qty.w-20{
+            width: 50%
+        }
+
+    }
+    @media (min-width: 992px) {
+        td a img{
+            width: 50%;
+        }
+        .pro-qty-area .qty.w-20{
+            width: 35%
+        }
+    }
+    @media (min-width: 1024px) {
+        td a img{
+            width: 40%;
+        }
+        .pro-qty-area .qty.w-20{
+            width: 30%
+        }
+    }
+    @media (min-width: 1200px) {
+        .pro-qty-area .qty.w-20{
+            width: 20%
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

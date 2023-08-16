@@ -1,0 +1,12 @@
+/* 
+    Created on : Jan 2, 2019, 3:20:37 PM
+    Author     : Shahidul Islam
+*/
+
+.recent-articles-area img{
+    height: 70px;
+    width: 70px
+}
+.post-row .view{
+    height: auto;
+}

@@ -1,0 +1,328 @@
+/* 
+    Created on : Jan 2, 2019, 3:20:37 PM
+    Author     : Shahidul Islam
+    Pages      : Sign In, Sign Up, Forget Password, about-us, contact-us, Error 404, 500.html, Sitemap.html
+    Notes      : Mainly most Design Inherit from MDB.css
+    W3C CSS Validator results: Congratulations! No Error Found.
+*/
+
+
+/*form styles*/
+.main-form {
+    width: 100%;
+    max-width: 28em;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+.main-form fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+/*Hide all except first fieldset*/
+.main-form fieldset:not(:first-of-type) {
+    display: none;
+}
+
+
+/*headings*/
+.fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+    margin-left: 0;
+    padding-left: 0;
+}
+#progressbar li {
+    list-style-type: none;
+    /*color: white;*/
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #fff;
+    background: #f7776e;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #faa49e;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+    background: #f44336;
+    color: white;
+}
+
+
+
+.modal {
+    position: fixed;
+    top:  20%;
+    right: 0;
+    /*bottom: 50%;*/
+    left: 0;
+    z-index: 1050;
+    display: none;
+    outline: 0;
+    /*margin: auto 0;*/
+}
+/*for about-us page*/
+.about-us .get-in-touch-area, .contact-us .get-in-touch-area, .services .get-in-touch-area{
+    max-width: 60em ;
+}
+@media (max-width: 425px) {
+    /*for sign-up page*/
+    .sign-up .previous.btn , .next.btn, .submit.btn{
+        display: block;
+        width: 100%
+    }
+    /*for error-404 page*/
+    .error-404 .error-text {
+        font-size: 6em;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+    /*for about-us page*/
+    .about-us .get-in-touch-area, .contact-us .get-in-touch-area, .services .get-in-touch-area{
+        width: 100% !important
+    }
+    .about-us .btn.submit, .contact-us .btn.submit, .services .btn.submit{
+        display: block;
+        width: 100%
+    }
+}
+/**************************************/
+/********* start for error -404 & 500*****/
+/**************************************/
+
+
+.error-404 .error-text {
+    font-weight: bold;
+    font-size: 12em;
+    position: relative;
+    letter-spacing: -.1em;
+}
+
+.error-500 .error-text {
+    font-weight: bold;
+    font-size: 12em;
+    position: relative;
+    letter-spacing: -.1em;
+}
+@media (max-width: 575px) {
+    /*for error-404 page*/
+    .error-404 .error-text , .error-500 .error-text {
+        font-size: 7em;
+    }
+
+}
+/**************************************/
+/********* end for error -404*****/
+/**************************************/
+
+
+/**************************************/
+/********* Start About Us & Contact Us *****/
+/**************************************/
+
+
+.avatar img.rounded-circle {
+    max-width: 150px;
+}
+
+
+.buble-area{
+    position: relative
+}
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(244, 67, 54, 0.3);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 1s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+/**************************************/
+/********* end About Us *****/
+/**************************************/
+
+
+/*Start for: sitemap.html*/
+/*.sitemap .map-ul li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px;
+}
+
+.sitemap .map-ul  li:before {
+    content: "\25BA \0020";
+    font-size: 12px;
+    position: absolute;
+    top: 2px;
+    left: -8px;
+}*/
+.map-ul{
+        /*padding-left: 2.5em;*/
+    padding-top: .5em;
+}
+.sitemap .map-ul li a{
+    text-transform: capitalize
+}
+.folder-layout .map-ul li a{
+    text-transform: none
+}
+/*end for: sitemap.html*/
